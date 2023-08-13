@@ -1,3 +1,59 @@
-.index-title {
-  font-size: 100px;
+// banner
+.banner{
+  img{
+    @include Mobile(){
+      height: 350px;
+      object-fit: cover;
+    }
+  }
+  .h5{
+    @include Mobile(){
+      font-size: 18px;
+    }
+  }
+}
+
+// more
+.more-list{
+  .list-item{
+      aspect-ratio: 1 / 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img{
+          width: 40%;
+      }
+      .h5{
+        @include Mobile(){
+          font-size: $font-size-base;
+        }
+      }
+      .h3{
+        @include Mobile(){
+          font-size: 24px;
+        }
+      }
+  }
+}
+
+// 活動景籍
+.activity-card{
+  &:nth-child(2){
+    // background: pink;
+    // transform: rotate(60deg);
+  }
+}
+
+.activity-card-list{
+  &>:nth-child(2n){
+    .activity-card{
+      transform: rotate(2deg);
+    }
+  }
+  &>:nth-child(3){
+    .activity-card{
+      transform: rotate(-2deg);
+    }
+  }
 }

@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+    <!-- <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css"> -->
   </head>
   <body>
     <%- include('./layout/nav'); -%>
 
     <div class="container pt-4 pt-md-6">
       <!-- 所有活動 -->
-      <div class="d-flex justify-content-between align-items-center border border-3 py-4 px-3 py-md-5 px-md-6 mb-3 mb-md-6">
+      <div class="area-title d-flex justify-content-between align-items-center py-4 px-3 py-md-5 px-md-6 mb-3 mb-md-6">
         <h3 class="h1">EVENT</h3>
         <h4 class="h4">所有活動</h4>
       </div>
@@ -239,13 +239,10 @@
 
       <!-- 頁碼 -->
       <nav aria-label="Page navigation example" class=" mb-7 mb-md-9">
-        <ul class="pagination justify-content-center">
+        <ul class="pagination justify-content-center h6 fs-8">
           <li class="page-item">
-            <a class="page-link" href="javascript:;" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-              <!-- <span class="material-symbols-outlined fs-8">
-                arrow_back
-                </span> -->
+            <a class="page-link px-3" href="javascript:;" aria-label="Previous">
+              <i class="icofont-arrow-left"></i>
             </a>
           </li>
           <li class="page-item active"><a class="page-link h6" href="javascript:;">1</a></li>
@@ -254,11 +251,8 @@
           <li class="page-item"><a class="page-link h6" href="javascript:;">4</a></li>
           <li class="page-item"><a class="page-link h6" href="javascript:;">5</a></li>
           <li class="page-item">
-            <a class="page-link" href="javascript:;" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-              <!-- <span class="material-symbols-outlined fs-9 d-block">
-                arrow_forward
-                </span> -->
+            <a class="page-link px-3" href="javascript:;" aria-label="Next">
+              <i class="icofont-arrow-right"></i>
             </a>
           </li>
         </ul>

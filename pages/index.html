@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
   </head>
   <body>
     <%- include('./layout/nav'); -%>
@@ -56,13 +55,13 @@
         </li>
         <li class="col">
           <a class="list-item border border-2 bg-secondary text-center link-primary" href="javascript:;">
-            <h5 class="h3 p-4 p-md-6">探索更多</h5>
+            <h5 class="h3">探索<br>更多</h5>
           </a>
         </li>
       </ul>
 
-      <!-- 近期活動 -->
-      <div class="d-flex justify-content-between align-items-center border border-3 py-4 px-3 py-md-5 px-md-6 mb-3 mb-md-66">
+      <!-- 近期活動  border border-3-->
+      <div class="area-title d-flex justify-content-between align-items-center py-4 px-3 py-md-5 px-md-6 mb-3 mb-md-6">
         <h3 class="h1">RECENT</h3>
         <h4 class="h4">近期活動</h4>
       </div>
@@ -74,7 +73,7 @@
           <p class="mb-4">你有聽說過「大災難家」裡面的主角 Tommy Wiseau 製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...</p>
           <div class="d-flex align-items-center border-top border-bottom border-2 py-3">
             <a href="" class="link-secondary d-flex align-items-center h6 fs-8">
-              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png" alt="" class="me-1">社群活動
+              <img src="../assets/images/sparkler.png" alt="" class="me-1">社群活動
             </a>
             <a href="" class="link-secondary fw-bold ms-auto">
               開賣中<span class="material-symbols-outlined ms-1">
@@ -167,7 +166,7 @@
       </ul>
 
       <!-- 線上活動 -->
-      <div class="d-flex justify-content-between align-items-center border border-3 py-4 px-3 py-md-5 px-md-6 mb-5 mb-md-6">
+      <div class="area-title d-flex justify-content-between align-items-center py-4 px-3 py-md-5 px-md-6 mb-5 mb-md-6">
         <h3 class="h1 mb-0">ONLINE</h3>
         <h4 class="h4 fw-bold mb-0">線上活動</h4>
       </div>
@@ -202,30 +201,30 @@
       活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS
     </div>
     <div class="container">
-      <div class="row mb-7 mb-md-9 g-8 g-md-4">
+      <div class="row mb-7 mb-md-9 g-8 g-md-4 activity-card-list">
         <div class="col-md-3">
-          <div class="border border-2 position-relative p-4">
+          <div class="activity-card border border-2 position-relative p-4">
             <span class="px-4 py-2 bg-white position-absolute top-0 start-50 translate-middle">社群活動</span>
             <img src="../assets/images/album/01.jpg" alt="" class="img-fluid mb-4">
             <div class="h6 fs-7 fw-bold mb-6">無聲派對-閉閉嘴dancing</div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="border border-2 position-relative p-4">
+          <div class="activity-card border border-2 position-relative p-4">
             <span class="px-4 py-2 bg-white position-absolute top-0 start-50 translate-middle">藝文活動</span>
             <img src="../assets/images/album/02.jpg" alt="" class="img-fluid mb-4">
             <div class="h6 fs-7 fw-bold mb-6">拯救老店大作戰</div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="border border-2 position-relative p-4">
+          <div class="activity-card border border-2 position-relative p-4">
             <span class="px-4 py-2 bg-white position-absolute top-0 start-50 translate-middle">自我覺察</span>
             <img src="../assets/images/album/03.jpg" alt="" class="img-fluid mb-4">
             <div class="h6 fs-7 fw-bold mb-6">內觀修行-部落篇</div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="border border-2 position-relative p-4">
+          <div class="activity-card border border-2 position-relative p-4">
             <span class="px-4 py-2 bg-white position-absolute top-0 start-50 translate-middle">聯誼活動</span>
             <img src="../assets/images/album/04.jpg" alt="" class="img-fluid mb-4">
             <div class="h6 fs-7 fw-bold mb-6">賞櫻野餐</div>
@@ -252,25 +251,19 @@
               <ul class="list-unstyled mb-0">
                 <li class="mb-4">
                   <a href="mailto:7tao.event@gmail.com" title="傳送郵件">
-                    <span class="material-symbols-outlined bg-secondary text-white p-2 me-4">
-                    alternate_email
-                    </span>
+                    <i class="icofont-ui-email bg-secondary text-white p-2 me-4"></i>
                     7tao.event@gmail.com
                   </a>
                 </li>
                 <li class="mb-4">
                   <a href="tel:09123123123" title="撥打電話">
-                    <span class="material-symbols-outlined bg-secondary text-white p-2 me-4">
-                      call
-                      </span>
+                      <i class="icofont-phone bg-secondary text-white p-2 me-4"></i>
                       09123123123
                   </a>
                 </li>
                 <li>
                   <a href="javascript:;" title="前往7TAO七逃fb粉絲專頁">
-                    <span class="material-symbols-outlined bg-secondary text-white p-2 me-4">
-                    alternate_email
-                    </span>
+                    <i class="icofont-facebook bg-secondary text-white p-2 me-4"></i>
                     7TAO七逃
                   </a>
                 </li>

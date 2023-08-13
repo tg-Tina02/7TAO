@@ -1,0 +1,25 @@
+.logo{
+  width: 53px;
+  @include Mobile(){
+    width: 40px;
+  }
+}
+.navbar{
+  // 搜尋input
+  form{
+    input[type="search"]{
+      height: 50px;
+      width: 284px;
+      @include Mobile(){
+        height: 36px;
+        width: 168px;
+      }
+    }
+  }
+}
+.nav-link{
+  color: $secondary;
+  &:hover{
+    color: #9C9E18;
+  }
+}

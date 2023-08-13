@@ -1,0 +1,76 @@
+.pagination{
+    // font-family: 'Noto Serif TC';
+}
+
+
+// detail
+.date{
+    .line{
+        width: 100px;
+        height: 2px;
+        background: $secondary;
+        transform: rotate(-60deg);
+        @include Mobile(){
+            width: 50px;
+        }
+    }
+    @include Mobile(){
+        &>.h3.border.border-2{
+            font-size: 24px;
+        }
+        .h3{
+            font-size: 22px;
+        }
+        .h4{
+            font-size: 16px;
+        }
+        .w-50{
+            width: 50px;
+        }
+    }
+}
+
+.table{
+    .btn{
+        font-family:'Noto Serif TC';
+        @include Mobile(){
+            font-size: 14px;
+        }
+    }
+    @include Mobile(){
+        font-size: 14px;
+        thead th{
+            font-size: 16px;
+        }
+    }
+}
+tr> :nth-child(1){
+    // background: pink;
+    width: 25%;
+    @include Mobile(){
+        // width: auto;
+    }
+}
+tr :nth-child(2){
+    // background: rgb(239, 141, 157);
+    width: 35%;
+    @include Mobile(){
+        // width: auto;
+        // width: 30%;
+    }
+}
+tr :nth-child(3){
+    // background: rgb(122, 58, 69);
+    width: 25%;
+    @include Mobile(){
+        width: auto;
+    }
+}
+tr :nth-child(4){
+    // background: rgb(169, 44, 65);
+    width: 10%;
+    @include Mobile(){
+        // width: auto;
+        width: 23%;
+    }
+}

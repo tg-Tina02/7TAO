@@ -596,9 +596,9 @@ $font-sizes: (
 
 // scss-docs-start headings-variables
 $headings-margin-bottom:      0px;//$spacer * .5 !default; custom
-$headings-font-family:        'Yeseva One','Noto Serif TC', serif, cursive;//null !default; custom
+$headings-font-family:        'Yeseva One', 'Noto Serif TC', serif, cursive;//null !default; custom
 $headings-font-style:         null !default;
-$headings-font-weight:        700;//500 !default; custom
+$headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
@@ -637,7 +637,7 @@ $blockquote-footer-color:     $gray-600 !default;
 $blockquote-footer-font-size: $small-font-size !default;
 
 $hr-margin-y:                 $spacer !default;
-$hr-color:                    inherit !default;
+$hr-color:                    $secondary;//inherit !default; custom
 
 // fusv-disable
 $hr-bg-color:                 null !default; // Deprecated in v5.2.0
@@ -645,8 +645,8 @@ $hr-height:                   null !default; // Deprecated in v5.2.0
 // fusv-enable
 
 $hr-border-color:             null !default; // Allows for inherited colors
-$hr-border-width:             $border-width !default;
-$hr-opacity:                  .25 !default;
+$hr-border-width:             $border-width !default; 
+$hr-opacity:                  .25 !default; 
 
 $legend-margin-bottom:        .5rem !default;
 $legend-font-size:            1.5rem !default;
@@ -671,7 +671,7 @@ $table-cell-padding-x:        .5rem !default;
 $table-cell-padding-y-sm:     .25rem !default;
 $table-cell-padding-x-sm:     .25rem !default;
 
-$table-cell-vertical-align:   top !default;
+$table-cell-vertical-align:   middle;//top !default; custom
 
 $table-color:                 var(--#{$prefix}body-color) !default;
 $table-bg:                    transparent !default;
@@ -768,7 +768,7 @@ $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
 $btn-padding-x-lg:            $input-btn-padding-x-lg !default;
 $btn-font-size-lg:            $input-btn-font-size-lg !default;
 
-$btn-border-width:            $input-btn-border-width !default;
+$btn-border-width:            2px;//$input-btn-border-width !default;
 
 $btn-font-weight:             $font-weight-normal !default;
 $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
@@ -1068,9 +1068,9 @@ $zindex-toast:                      1090 !default;
 $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
-$nav-link-font-weight:              null !default;
+$nav-link-font-weight:              null !default;//$secondary
 $nav-link-color:                    var(--#{$prefix}link-color) !default;
-$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default; // nav 覆蓋不了?
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           $gray-600 !default;
 
@@ -1191,8 +1191,8 @@ $dropdown-dark-header-color:        $gray-500 !default;
 // Pagination
 
 // scss-docs-start pagination-variables
-$pagination-padding-y:              .5rem;//.375rem !default; custom
-$pagination-padding-x:              .75rem !default;
+$pagination-padding-y:              .5rem;//.375rem !default; ;custom
+$pagination-padding-x:              13px;//.75rem !default;
 $pagination-padding-y-sm:           .25rem !default;
 $pagination-padding-x-sm:           .5rem !default;
 $pagination-padding-y-lg:           .75rem !default;
@@ -1203,7 +1203,7 @@ $pagination-font-size:              $font-size-base !default;
 $pagination-color:                  var(--#{$prefix}link-color) !default;
 $pagination-bg:                     none;//$white !default; custom
 $pagination-border-radius:          none;//$border-radius !default; custom
-$pagination-border-width:           $border-width !default;
+$pagination-border-width:           1.5px;//$border-width !default;
 $pagination-margin-start:           8px;//($pagination-border-width * -1) !default; custom
 $pagination-border-color:           $secondary;//$gray-300 !default; custom
 
