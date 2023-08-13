@@ -1,5 +1,18 @@
+// 字體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Yeseva+One&display=swap');
+
+// google icon
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+// IcoFont
+// @import url('myProjects/webProject/icofont/css/icofont.min.css');
+
+
+
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+@import './utils/base';
+
 
 
 @import './layout/header.scss';

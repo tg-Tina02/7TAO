@@ -298,8 +298,8 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #FBFF22; //$blue !default; custom
+$secondary:     #030303; //$gray-600 !default; custom
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -374,11 +374,15 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25, //4
+  2: $spacer * .5,  //8
+  3: $spacer * .75, //12
+  4: $spacer,       //16
+  5: $spacer * 1.5, //24
+  6: $spacer * 2,   //32
+  7: $spacer * 3,   //48
+  8: $spacer * 3.375, //54
+  9: $spacer * 3.75  //60
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -398,16 +402,16 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-bg:                   #F3F1E5;//$white !default; custom
+$body-color:                $secondary;//$gray-900 !default; custom
 $body-text-align:           null !default;
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-color:                              $secondary; //$primary !default; custom
+$link-decoration:                         none;//underline !default; custom
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -487,12 +491,12 @@ $border-widths: (
 ) !default;
 
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
+$border-color:                $secondary;//$gray-300 !default; custom
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
+$border-radius:               .375rem !default; 
 $border-radius-sm:            .25rem !default;
 $border-radius-lg:            .5rem !default;
 $border-radius-xl:            1rem !default;
@@ -539,8 +543,8 @@ $aspect-ratios: (
 // Font, line-height, and color for body text, headings, and more.
 
 // scss-docs-start font-variables
-// stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// stylelint-disable value-keyword-case // 'Noto Sans TC' custom
+$font-family-sans-serif:      'Noto Sans TC',system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -566,12 +570,14 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 4;//2.5 !default; custom
+$h2-font-size:                $font-size-base * 3.75;//2 !default;
+$h3-font-size:                $font-size-base * 3;//1.75 !default;
+$h4-font-size:                $font-size-base * 2;//1.5 !default;
+$h5-font-size:                $font-size-base * 1.5;//1.5;//1.25 !default;
+$h6-font-size:                $font-size-base * 1.25;//!default;
+// $h7-font-size:                $font-size-base * 1.125;//!default;
+// $h8-font-size:                $font-size-base ;//!default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -581,15 +587,18 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $font-size-base * 1.125, //custom
+  8: $font-size-base,  //custom
+  9: $font-size-base * 0.75 //custom
 ) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
-$headings-font-family:        null !default;
+$headings-margin-bottom:      0px;//$spacer * .5 !default; custom
+$headings-font-family:        'Yeseva One','Noto Serif TC', serif, cursive;//null !default; custom
 $headings-font-style:         null !default;
-$headings-font-weight:        500 !default;
+$headings-font-weight:        700;//500 !default; custom
 $headings-line-height:        1.2 !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
@@ -773,7 +782,7 @@ $btn-link-hover-color:        var(--#{$prefix}link-hover-color) !default;
 $btn-link-disabled-color:     $gray-600 !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           $border-radius !default;
+$btn-border-radius:           none;//$border-radius !default; custom
 $btn-border-radius-sm:        $border-radius-sm !default;
 $btn-border-radius-lg:        $border-radius-lg !default;
 
@@ -1097,7 +1106,7 @@ $navbar-brand-margin-end:           1rem !default;
 $navbar-toggler-padding-y:          .25rem !default;
 $navbar-toggler-padding-x:          .75rem !default;
 $navbar-toggler-font-size:          $font-size-lg !default;
-$navbar-toggler-border-radius:      $btn-border-radius !default;
+$navbar-toggler-border-radius:      4px;//$btn-border-radius !default; custom
 $navbar-toggler-focus-width:        $btn-focus-width !default;
 $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 
@@ -1182,7 +1191,7 @@ $dropdown-dark-header-color:        $gray-500 !default;
 // Pagination
 
 // scss-docs-start pagination-variables
-$pagination-padding-y:              .375rem !default;
+$pagination-padding-y:              .5rem;//.375rem !default; custom
 $pagination-padding-x:              .75rem !default;
 $pagination-padding-y-sm:           .25rem !default;
 $pagination-padding-x-sm:           .5rem !default;
@@ -1192,23 +1201,23 @@ $pagination-padding-x-lg:           1.5rem !default;
 $pagination-font-size:              $font-size-base !default;
 
 $pagination-color:                  var(--#{$prefix}link-color) !default;
-$pagination-bg:                     $white !default;
-$pagination-border-radius:          $border-radius !default;
+$pagination-bg:                     none;//$white !default; custom
+$pagination-border-radius:          none;//$border-radius !default; custom
 $pagination-border-width:           $border-width !default;
-$pagination-margin-start:           ($pagination-border-width * -1) !default;
-$pagination-border-color:           $gray-300 !default;
+$pagination-margin-start:           8px;//($pagination-border-width * -1) !default; custom
+$pagination-border-color:           $secondary;//$gray-300 !default; custom
 
 $pagination-focus-color:            var(--#{$prefix}link-hover-color) !default;
 $pagination-focus-bg:               $gray-200 !default;
-$pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
+$pagination-focus-box-shadow:       none;//$input-btn-focus-box-shadow !default; custom
 $pagination-focus-outline:          0 !default;
 
-$pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
-$pagination-hover-bg:               $gray-200 !default;
-$pagination-hover-border-color:     $gray-300 !default;
+$pagination-hover-color:            $primary;//var(--#{$prefix}link-hover-color) !default; custom
+$pagination-hover-bg:               $secondary;//$gray-200 !default; custom
+$pagination-hover-border-color:     $secondary;//$gray-300 !default; custom
 
-$pagination-active-color:           $component-active-color !default;
-$pagination-active-bg:              $component-active-bg !default;
+$pagination-active-color:           $primary;//$component-active-color !default; custom
+$pagination-active-bg:              $secondary;//$component-active-bg !default; custom
 $pagination-active-border-color:    $pagination-active-bg !default;
 
 $pagination-disabled-color:         $gray-600 !default;
