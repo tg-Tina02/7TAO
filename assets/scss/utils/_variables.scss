@@ -300,6 +300,7 @@ $cyans: (
 // scss-docs-start theme-color-variables
 $primary:       #FBFF22; //$blue !default; custom
 $secondary:     #030303; //$gray-600 !default; custom
+$third:         #C96464; // custom
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -312,6 +313,7 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "third":      $third,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -637,7 +639,7 @@ $blockquote-footer-color:     $gray-600 !default;
 $blockquote-footer-font-size: $small-font-size !default;
 
 $hr-margin-y:                 $spacer !default;
-$hr-color:                    $secondary;//inherit !default; custom
+$hr-color:                    black;//inherit !default; custom
 
 // fusv-disable
 $hr-bg-color:                 null !default; // Deprecated in v5.2.0
@@ -645,8 +647,8 @@ $hr-height:                   null !default; // Deprecated in v5.2.0
 // fusv-enable
 
 $hr-border-color:             null !default; // Allows for inherited colors
-$hr-border-width:             $border-width !default; 
-$hr-opacity:                  .25 !default; 
+$hr-border-width:             1px;//$border-width !default; custom
+$hr-opacity:                  1;//.25 !default; custom
 
 $legend-margin-bottom:        .5rem !default;
 $legend-font-size:            1.5rem !default;

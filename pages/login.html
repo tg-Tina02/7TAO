@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO 活動訂票網</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+</head>
+<body class="vh-100 d-flex flex-column justify-content-between">
+    <%- include('./layout/nav'); -%>
+
+    <div class="container mb-auto">
+        <div class="row pt-5 pt-md-9">
+            <div class="col-md-4 mx-auto">
+                <div class="text-center mb-4">
+                    <img src="../assets/images/sparkler.png" alt="" class="mb-4 star">
+                    <div class="h5">會員登入</div>
+                </div>
+                <!-- login-form -->
+                <form action="" class="order-form">
+                    <label for="account" class="d-block mb-2">帳號</label>
+                    <input type="text" id="account" placeholder="請輸入帳號" class="d-block w-100 mb-4" required>
+                    <span class="tip fs-9 text-third">請輸入帳號</span>
+                    <label for="password" class="d-block mb-2">密碼</label>
+                    <input type="password" id="password" placeholder="請輸入密碼" class="d-block w-100 mb-4" required>
+                    <span class="tip fs-9 text-third">請輸入密碼</span>
+                    <div class="d-flex flex-column align-items-center mt-6">
+                        <button type="submit" class="btn btn-secondary py-4 py-md-2 mb-3">
+                            登入<span class="material-symbols-outlined ms-1">
+                              keyboard_double_arrow_right
+                              </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

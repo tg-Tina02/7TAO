@@ -1,0 +1,96 @@
+.order{
+    font-family: 'Noto Serif TC';
+    position: relative;
+    .line{
+        position: absolute;
+        z-index: -1;
+        top: 24px;
+        left: 24px;
+        width: 90%;
+        height: 1px;
+        background: #000;
+        @include Mobile(){
+            top: 16px;
+            left: 16px;
+        }
+    }
+    .box{
+        font-size: 20px;
+        line-height: 48px;
+        text-align: center;
+        background: $body-bg;
+        aspect-ratio: 1 / 1;
+        width: 48px;
+        border: 1px solid black;
+        margin-bottom: 8px;
+        @include Mobile(){
+            font-size: 16px;
+            line-height: 32px;
+            width: 32px;
+            margin-bottom: 4px;
+        }
+        &.active{
+            background: $secondary;
+            color: $primary;
+        }
+    }
+}
+.star{
+    width: 32px;
+}
+.order-form{
+    input:not([type="radio"]){
+        background: transparent;
+        padding: 8px 16px;
+        border: 1px solid $secondary;
+        &:focus{
+            outline: 1px solid $secondary;
+        }
+    }
+    input:focus:invalid{
+        border-color: transparent;
+        outline: 2px solid $third;
+        margin-bottom: 0px;
+        &+.tip{
+            display: block;
+            top: -14px;
+        }
+    }
+    .tip{
+        display: none;
+        position: relative;
+        top: -16px;
+    }
+    ::placeholder{
+        font-size: 20px;
+        color: #878787;
+    }
+    .btn{
+        width: 100%;
+        max-width: 416px;
+    }
+    .cancel{
+        font-size: 18px;
+        color: #4F4F4F;
+        &:hover{
+            color: $secondary;
+        }
+    }
+}
+.done{
+    .icofont-check-circled{
+        font-size: 48px;
+        // background: pink;
+        @include Mobile(){
+            font-size: 32px;
+        }
+    }
+    .h4{
+        @include Mobile(){
+            font-size: 24px;
+        }
+    }
+    p{
+        color: #4F4F4F;
+    }
+}

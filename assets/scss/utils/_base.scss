@@ -11,6 +11,26 @@
     a img{
         width: 24px;
     }
+    a[href="EVENT.html"]:hover{
+        text-decoration: underline;
+    }
+    a[href="javascript:;"],a[href="EVENT-detail.html"]{
+        position: relative;
+        &:hover{
+            &::before{
+                content: '';
+                width: 29px;
+                height: 29px;
+                border-radius: 50%;
+                background: #FBFF22;
+                position: absolute;
+                z-index: -1;
+                top: 50%;
+                left: 8px;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
 }
 // tag
 .tag-list{
@@ -63,3 +83,7 @@
       color: $primary;
     }
   }
+
+.bg-yellow-light{
+    background: #EBEAE8;
+}

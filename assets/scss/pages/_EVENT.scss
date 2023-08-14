@@ -1,7 +1,3 @@
-.pagination{
-    // font-family: 'Noto Serif TC';
-}
-
 
 // detail
 .date{
@@ -68,7 +64,7 @@ tr :nth-child(3){
 }
 tr :nth-child(4){
     // background: rgb(169, 44, 65);
-    width: 10%;
+    width: 15%;
     @include Mobile(){
         // width: auto;
         width: 23%;

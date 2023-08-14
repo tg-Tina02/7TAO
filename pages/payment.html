@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO 活動訂票網</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+</head>
+<body>
+    <%- include('./layout/nav'); -%>
+
+    <div class="container">
+        <div class="row pt-5 pt-md-9">
+            <div class="col-md-6 mx-auto">
+                <!-- order 進度條 -->
+                <div class="order d-flex justify-content-between mb-5 mb-md-7">
+                    <div class="line"></div>
+                    <div class="d-flex flex-column align-items-center">
+                        <span class="box active"><i class="icofont-verification-check"></i></span>
+                        <div class="h6 fs-8">訂單確認</div>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <span class="box active">2</span>
+                        <div class="h6 fs-8">結帳付款</div>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <span class="box">3</span>
+                        <div class="h6 fs-8">訂購結果</div>
+                    </div>
+                </div>
+
+                <h3 class="h3 text-center mb-4">
+                    返老還童-制服聯誼
+                </h3>
+            </div>
+        </div>
+
+        <div class="row flex-column align-items-center">
+            <div class="col-11 col-md-auto bg-secondary py-2 px-3 text-primary mb-6">
+                您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。
+            </div>
+            <div class="col-md-6">
+                <table class="table mb-6 mb-md-7">
+                    <tbody class="border-top border-2">
+                      <tr>
+                        <td class="h6 fs-8 py-4 py-md-2">訂單編號</td>
+                        <td class="text-end py-4 py-md-2">892746123</td>
+                      </tr>
+                      <tr>
+                        <td class="h6 fs-8 py-4 py-md-2">票券</td>
+                        <td class="text-end w-75 py-4 py-md-2">改頭換面票（含大改造）$8000</td>
+                      </tr>
+                    </tbody>
+                </table>
+
+                <div class="text-center mb-4">
+                    <img src="../assets/images/sparkler.png" alt="" class="mb-4 star">
+                    <div class="h5">結帳資訊</div>
+                </div>
+                <!-- form -->
+                <form action="" class="order-form">
+                    <label for="info" class="mb-2">取票資訊</label>
+                    <input type="text" id="info" placeholder="請輸入身分證字號或護照號碼" class="d-block w-100 mb-1">
+                    <div class="form-text mb-4">
+                        請輸入您的 <span class="text-third">身分證字號</span> 供取票使用，外籍人士請輸入 <span class="text-third">護照號碼</span>
+                    </div>
+                    <label class="mb-6">
+                        付款方式<br>
+                        <label class="mt-2">
+                            <input type="radio" name="pay" value="blue" class="me-2">信用卡
+                        </label><br>
+                        <label class="mt-2">
+                            <input type="radio" name="pay" class="me-2">ATM虛擬帳號
+                        </label>
+                    </label>
+                    <div class="d-flex flex-column align-items-center mb-7 mb-md-8">
+                        <a href="done.html" type="submit" class="btn btn-secondary py-2 mb-3">
+                            確認訂單並繳費 $8000<span class="material-symbols-outlined ms-1">
+                              keyboard_double_arrow_right
+                              </span>
+                          </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+</body>
+</html>
