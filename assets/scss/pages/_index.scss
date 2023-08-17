@@ -64,8 +64,15 @@
   // transform: rotate(-4deg);
   transform: translate(-50%,-50%) rotate(-4deg);
 }
-.Marquee{
+
+// swiper 的跑馬燈
+.swiper-wrapper {
+  transition-timing-function: linear;
   @include Mobile(){
     font-size: 16px;
   }
+}
+.swiper-slide {
+  letter-spacing: 3.2px;
+  width: auto;
 }

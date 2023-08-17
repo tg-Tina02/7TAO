@@ -2,13 +2,18 @@
 // detail
 .date{
     .line{
-        width: 100px;
+        // width: 50px;
+        // height: 2px;
+        width: 50px;
         height: 2px;
+        left: 50%;
+        top: 50%;
         background: $secondary;
-        transform: rotate(-60deg);
-        @include Mobile(){
-            width: 50px;
-        }
+        // transform: rotate(-60deg);
+        transform: translateX(-50%) rotate(120deg);
+        // @include Mobile(){
+        //     width: 50px;
+        // }
     }
     @include Mobile(){
         &>.h3.border.border-2{
