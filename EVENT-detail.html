@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>7TAO 活動訂票網</title>
     <link rel="shortcut icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB90lEQVRYhe2XTWsTQRjHfzOzbWJbjaRBzOtBT7nZar21NhdfToIfQETpBxDvUvwA4j20iB9ASDzoQakvd5tbT71sm0YkVlPabazZGQ9rGwWNbIZmUfrAwrI88/x/+7wMM0IpZYjQHIDy4jjF4tBAhVdWvjF3+1MAUCwOcWEqNlCAfZORqB4B/DcAvm/Q2m6KrQAaGz71dT86ANft4LodKwDHZnFjw+7vrQE2NzVa2wGELsGbpTatVqC6taXZ3g7e19wOr5fahw9w5qzDjesfqS3vsbNj8DzDu7dtbt1sMjE5HBogdAnyBYf5ByeZu9Mkm3XQ2lCteJQXUiQS4Xu6J4DWhvq6j+t2+NDwaTaDlHueIZ1WvHi+C8DVa8eoVjxevdzl+AlJMinJZBT5gkMmo1BK/FGjJ7IxIETwAEjZ/S5lN6jW5sDHaBA/fDDdtX1lQClBLu+Qy//qVlv+yrOqx+UrcaQU1OsdZktxpmfivdV+Y6GL1mpp7t39zMNHSaYuxpg8P0x5YZz5+19Y62NTCg1Qe7/H4ycppmfijIwIRkcF5yZiPK2cYnU1PEDoKbhU6qZ5bEwe9EUiIZkthS+B1U6YSklsT7RWAKfT6q9dfqgAhYITzFxUANmcCuY9KoCfN6O+Y1hHOAL41wEcCC6Kg7Z9TRH19fw7FD2eMkrOvnIAAAAASUVORK5CYII=" />
+    <!-- swiper 套件 css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script type="module" crossorigin src="/7TAO/assets/main-4d318805.js"></script>
     <link rel="stylesheet" href="/7TAO/assets/main-53be55a8.css">
   </head>
@@ -49,17 +51,17 @@
       <!-- banner -->
       <div class="row mb-5 g-2 g-md-5">
         <!-- 大照片 -->
-        <div class="col-md-10">
+        <div class="col-md-10" data-aos="fade-right" data-aos-delay="100">
           <div class="border border-2 p-3 p-md-5">
             <img src="/7TAO/assets/09-be2b0f0d.jpg" alt="banner照片" class="img-fluid">
           </div>
         </div>
         <!-- 日期 -->
         <div class="date col-md-2 d-flex flex-md-column gap-2 gap-md-5 text-center">
-          <div class="h3 border border-2 py-6 px-4">
+          <div class="h3 border border-2 py-6 px-4" data-aos="fade-left">
             2023
           </div>
-          <div class="border border-2 flex-grow-1 px-5 py-3 py-md-7 d-flex flex-md-column justify-content-between align-items-center position-relative">
+          <div class="border border-2 flex-grow-1 px-5 py-3 py-md-7 d-flex flex-md-column justify-content-between align-items-center position-relative" data-aos="fade-left" data-aos-delay="200">
             <div>
               <div class="h3 mb-1">MAY</div>
               <div class="h3">19</div>
@@ -75,9 +77,9 @@
       </div>
 
       <!-- 簡介 -->
-      <h3 class="h2 mb-4">返老還童-制服聯誼</h3>
-      <p class="mb-5">穿上制服，無年齡限制，一起走上街頭、尋找青春才有的純愛心動！</p>
-      <div class="d-none d-md-block mb-7">
+      <h3 class="h2 mb-4" data-aos="fade-up">返老還童-制服聯誼</h3>
+      <p class="mb-5" data-aos="fade-up">穿上制服，無年齡限制，一起走上街頭、尋找青春才有的純愛心動！</p>
+      <div class="d-none d-md-block mb-7" data-aos="fade-up">
         <ul class="tag-list">
           <li>聯誼</li>
           <li>美食</li>
@@ -87,7 +89,7 @@
       </div>
 
       <!--  -->
-      <div class="bg-yellow-light border border-2 p-4 p-md-6 mb-5 mb-md-7">
+      <div class="bg-yellow-light border border-2 p-4 p-md-6 mb-5 mb-md-7" data-aos="fade-up">
         <p>想回到過去？試著讓故事繼續？</p>
         <p>由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！制服由主辦方提供，妝髮造型可額外加價購！</p>
         <p class="mb-0">活動中全程會有隨行攝影師，捕捉你們的純愛互動，拍攝成實境電視劇，讓你們能留下永恆的美好回憶 </p>
@@ -137,5 +139,13 @@
     © 7TAO七逃. All Rights Reserved
 </footer>
     
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, 
+      });
+    </script>
   </body>
 </html>
