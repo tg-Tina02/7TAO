@@ -1,10 +1,11 @@
 // banner
 .banner{
-  img{
-    @include Mobile(){
-      height: 350px;
-      object-fit: cover;
-    }
+  background-image: url('../assets/images/event/13.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 518px;
+  @include Mobile(){
+    height: 350px;
   }
   .h5{
     @include Mobile(){
@@ -38,12 +39,6 @@
 }
 
 // 活動景籍
-.activity-card{
-  &:nth-child(2){
-    // background: pink;
-    // transform: rotate(60deg);
-  }
-}
 
 .activity-card-list{
   &>:nth-child(2n){
@@ -75,4 +70,15 @@
 .swiper-slide {
   letter-spacing: 3.2px;
   width: auto;
+}
+
+.index-last-word{
+  @include Mobile(){
+    .h6{
+      font-size: 18px;
+    }
+    .fs-8{
+      font-size: 14px;
+    }
+  }
 }
